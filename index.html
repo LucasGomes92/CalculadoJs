@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora Basica ^^</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="grid grid-template-areas">
+                <input id="input-value" type="number" class="display" name="num">
 
-</body>
+                <button class="item clear button-operations">C</button>
+                <button class="item plus-minus button-operations">+/-</button>
+                <button class="item percent button-operations">%</button>
+                <button class="item division button-operations-right">÷</button>
+
+                <button (click)="insirindoValores('7')" value="7" class="item seven button-numbers">7</button>
+                <button (click)="insirindoValores('8')" value="8" class="item eight button-numbers">8</button>
+                <button (click)="insirindoValores('9')" value="9" class="item nine  button-numbers">9</button>
+                <button (click)="insirindoValores('X')" value="*" class="item multiplication button-operations-right">X</button>
+
+                <button (click)="insirindoValores('4')" value="4" class="item four button-numbers">4</button>
+                <button (click)="insirindoValores('5')" value="5" class="item five button-numbers">5</button>
+                <button (click)="insirindoValores('6')" value="6" class="item six  button-numbers">6</button>
+                <button class="item minus button-operations-right">-</button>
+
+                <button (click)="insirindoValores('1')" value="1" class="item one button-numbers">1</button>
+                <button (click)="insirindoValores('2')" value="2" class="item two button-numbers">2</button>
+                <button (click)="insirindoValores('2')" value="3" class="item three button-numbers">3</button>
+                <button (click)="somar()" class="item plus button-operations-right">+</button>
+
+                <button (click)="insirindoValores('0')" value="0" class="item zero button-numbers">0</button>
+                <button (click)="insirindoValores(',')" value="," class="item point button-numbers">,</button>
+                <button (click)="insirindoValores('=')" value="=" class="item equal button-operations-right">=</button>
+            </section>
+        </div>
+    </body>
+
+    <script src="calcular.js"></script>
+
 </html>

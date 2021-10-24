@@ -1,0 +1,154 @@
+ *{
+        margin: 0;
+        padding: 0;
+        font-family: "Arial Black";
+        box-sizing: border-box;
+    }
+
+    .container{
+        background: linear-gradient(rebeccapurple, mediumpurple, darkorange);
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+       justify-content: center;
+       align-content: center;
+    }
+
+    .grid{
+        display: grid;
+        height: 480px;
+        width: 310px;
+    }
+
+    .item{
+        color: grey;
+        font-size: 20px;
+        cursor:pointer;
+        outline: none;
+        border: 0.5px solid black;
+        border-radius: 0;
+        opacity: 0.8;
+        color:white;
+    }
+
+    .item:hover{
+        opacity:0.7;
+    }
+
+    .item:active{
+        background-color:#4A494F;
+        opacity: 0.3;
+        color:#4A494F;
+    }
+
+    .display{
+        grid-area: display;
+        background-color: white;
+        opacity: 0.7;
+        border: none;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-size:20px;
+        color: black;
+        padding-left: 20px;
+    }
+
+    .button-operations-right{
+        background-color: orange;
+    }
+
+    .button-operations{
+        background-color: grey;
+    }
+
+    .button-numbers{
+        background-color: gray;
+
+    }
+
+    .clear{
+        grid-area: clear;
+    }
+
+    .plus-minus{
+        grid-area: plus-minus;
+
+    }
+
+    .percent {
+        grid-area: percent;
+    }
+
+    .division{
+        grid-area: division;
+    }
+
+    .multiplication{
+        grid-area: multiplication;
+    }
+
+    .plus{
+        grid-area: plus;
+    }
+
+    .minus{
+        grid-area: minus
+    }
+
+    .equal{
+        grid-area: equal;
+    }
+
+    .point{
+        grid-area: point;
+    }
+
+    .zero{
+        grid-area: zero;
+    }
+
+    .one{
+        grid-area: one;
+    }
+
+    .two{
+        grid-area: two;
+    }
+
+    .three{
+        grid-area: three;
+    }
+
+    .four{
+        grid-area: four
+    }
+
+    .five{
+        grid-area: five
+    }
+
+    .six{
+        grid-area: six;
+    }
+
+    .seven{
+        grid-area: seven;
+    }
+
+    .eight{
+        grid-area: eight;
+    }
+
+    .nine{
+        grid-area: nine;
+    }
+
+    .grid-template-areas{
+        grid-template-areas:
+            "display display display display"
+            "clear plus-minus percent division"
+            "seven eight nine multiplication"
+            "four five six minus"
+            "one two three plus"
+            "zero zero point equal";
+    }
