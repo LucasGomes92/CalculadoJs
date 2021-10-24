@@ -58,7 +58,7 @@
     }
 
     .button-operations{
-        background-color: grey;
+        background-color:mediumpurple;
     }
 
     .button-numbers{
@@ -143,7 +143,7 @@
         grid-area: nine;
     }
 
-    .grid-template-areas{
+ .grid-template-areas{
         grid-template-areas:
             "display display display display"
             "clear plus-minus percent division"
@@ -151,4 +151,4 @@
             "four five six minus"
             "one two three plus"
             "zero zero point equal";
-    }
+ }
